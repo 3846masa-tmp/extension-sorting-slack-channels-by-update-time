@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "chrome": 54
+      }
+    }],
+    "babili"
+  ],
+  "plugins": [
+    "add-module-exports"
+  ]
+}

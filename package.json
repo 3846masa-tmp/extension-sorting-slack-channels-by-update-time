@@ -1,0 +1,46 @@
+{
+  "name": "slack-sorting-channels-by-update-time",
+  "description": "Sorting slack channels by update time.",
+  "version": "0.0.0",
+  "author": "3846masa <3846masahiro+git@gmail.com>",
+  "chrome_extension": {
+    "name": "Sorting Slack Channels"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "lodash.throttle": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.40",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-babili": "^0.0.11",
+    "babel-preset-env": "^1.1.8",
+    "babili-webpack-plugin": "^0.0.10",
+    "cross-conf-env": "^1.1.2",
+    "cross-env": "^3.1.4",
+    "css-loader": "^0.26.1",
+    "ejs-cli": "^2.0.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-html": "^2.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "npm-run-all": "^4.0.1",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "npm-run-all -p build:*",
+    "build:manifest": "ejs-cli manifest.base.json --options package.json > ./manifest.json",
+    "build:webpack": "webpack",
+    "clean": "rimraf dist manifest.json",
+    "prebuild": "npm run clean",
+    "prerelease": "cross-env NODE_ENV=production npm run build",
+    "release": "cross-conf-env zip release-$npm_package_version.zip dist LICENSE README.md manifest.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run build:webpack -- --watch"
+  }
+}

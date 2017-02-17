@@ -1,0 +1,7 @@
+#starred-list,
+#channel-list,
+#im-list,
+#channel_scroll_up,
+#channel_scroll_down {
+  display: none !important;
+}
