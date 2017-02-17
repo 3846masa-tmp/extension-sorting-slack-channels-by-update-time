@@ -13,7 +13,7 @@
 
 ## Install
 
-1. Download latest version from [Releases](./releases).
+1. Download latest version from [Releases](https://github.com/3846masa/extension-sorting-slack-channels-by-update-time/releases).
 2. Load extension via `chrome://extensions`. (See [details](https://developer.chrome.com/extensions/getstarted#unpacked).)
 
 ## Usage
