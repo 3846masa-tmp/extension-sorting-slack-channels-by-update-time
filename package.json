@@ -36,11 +36,10 @@
     "build": "npm-run-all -p build:*",
     "build:manifest": "ejs-cli manifest.base.json --options package.json > ./manifest.json",
     "build:webpack": "webpack",
-    "clean": "rimraf dist manifest.json",
+    "clean": "rimraf dist manifest.json release-*.zip",
     "prebuild": "npm run clean",
     "prerelease": "cross-env NODE_ENV=production npm run build",
-    "release": "cross-conf-env zip release-$npm_package_version.zip dist LICENSE README.md manifest.json",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "cross-conf-env zip -r release-$npm_package_version.zip dist LICENSE README.md manifest.json",
     "watch": "npm run build:webpack -- --watch"
   }
 }
