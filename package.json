@@ -7,20 +7,20 @@
     "name": "Sorting Slack Channels"
   },
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.16.1",
     "lodash.throttle": "^4.1.1"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.40",
+    "@types/chrome": "^0.0.46",
     "babel-core": "^6.23.1",
-    "babel-loader": "^6.3.1",
+    "babel-loader": "^7.0.0",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-babili": "^0.0.11",
+    "babel-preset-babili": "^0.0.12",
     "babel-preset-env": "^1.1.8",
-    "babili-webpack-plugin": "^0.0.10",
+    "babili-webpack-plugin": "^0.0.11",
     "cross-conf-env": "^1.1.2",
-    "cross-env": "^3.1.4",
-    "css-loader": "^0.26.1",
+    "cross-env": "^4.0.0",
+    "css-loader": "^0.28.1",
     "ejs-cli": "^2.0.0",
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^11.1.0",
@@ -28,7 +28,7 @@
     "eslint-plugin-import": "^2.2.0",
     "npm-run-all": "^4.0.1",
     "rimraf": "^2.5.4",
-    "style-loader": "^0.13.1",
+    "style-loader": "^0.17.0",
     "webpack": "^2.2.1"
   },
   "license": "MIT",
