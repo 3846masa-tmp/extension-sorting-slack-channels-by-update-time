@@ -1,5 +1,7 @@
 # Sorting Slack Channels by Update Time Extension
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/3846masa/extension-sorting-slack-channels-by-update-time.svg)](https://greenkeeper.io/)
+
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 > Sorting slack channels by update time.
